@@ -5,12 +5,12 @@ edition = "2021"
 
 #changed entry point (creating a binary)
 [[bin]]
-name = "lololol"
-path = "src/functions.rs"
+name = "learning_rust"
+path = "src/main.rs"
 
 #creating a second binary, only used cargo build
-[[bin]]
-name = "chips"
-path = "src/other_functions.rs"
+# [[bin]]
+# name = "second_binary"
+# path = "src/second_binary_entry_point.rs"
 
 [dependencies]

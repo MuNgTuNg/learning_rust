@@ -1,0 +1,10 @@
+cargo init
+cargo new {PROJECT_NAME} 
+cargo run
+cargo build 
+cargo check <- checks code will compile but doesn't compile code.
+
+rustc {ENTRY_FILE}
+
+
+cargo build --release

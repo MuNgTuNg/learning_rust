@@ -3,20 +3,14 @@ use std::env;
 //currently on
 //https://doc.rust-lang.org/book/ch03-05-control-flow.html
 
-fn main() {
-    println!("{}",retrieve_directory());
-    let result = print_shb("hello world");
-    print!("{result}\n");
-
-    print!("{}",five());
-}
 
 //block of code is literally just a five
-fn five() -> i32 {
+
+pub fn five() -> i32 {
     5
 }
 
-fn print_shb(message: &str) -> String{
+pub fn print_shb(message: &str) -> String{
     println!("{message}");
     
     //code blocks can return values to variables like inline functions
@@ -30,10 +24,10 @@ fn print_shb(message: &str) -> String{
     //this is a statement, without the ending semicolon
     //allowing this to return the value from the function
     "Hello Mate from the func".to_string()
-    
 }
 
-fn retrieve_directory() -> String{
+
+pub fn retrieve_directory() -> String{
     let path = env::current_dir();
     match path {
         Ok(x) => {
@@ -45,4 +39,12 @@ fn retrieve_directory() -> String{
                     permission.".to_string();
         }
     }
+}
+
+
+pub fn functions_main(){
+    println!("{}",retrieve_directory());
+    let result = print_shb("hello world");
+    print!("{result}\n");
+    print!("{}", five());
 }
