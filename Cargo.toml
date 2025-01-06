@@ -1,0 +1,16 @@
+[package]
+name = "learning_rust"
+version = "0.1.0"
+edition = "2021"
+
+#changed entry point (creating a binary)
+[[bin]]
+name = "lololol"
+path = "src/functions.rs"
+
+#creating a second binary, only used cargo build
+[[bin]]
+name = "chips"
+path = "src/other_functions.rs"
+
+[dependencies]
