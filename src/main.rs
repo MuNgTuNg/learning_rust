@@ -1,16 +1,18 @@
 //pub mod disables dead code warnings but be aware it is all still dead code.
-pub mod functions;
+//pub mod functions;
 // pub mod variables;
 // pub mod control_flow;
 // pub mod nested_mods;
 // use crate::functions::retrieve_directory; //crate file is the entry point of file (main.rs). 
-use functions::retrieve_directory;
+//use functions::retrieve_directory;
+
+pub mod control_flow;
 
 fn main() {
     
-
+    control_flow::control_flow();
     // //functions
-    println!("{}", retrieve_directory());
+    //println!("{}", retrieve_directory());
     
     ////variables
     //variables::variables_main();
