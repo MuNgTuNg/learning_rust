@@ -5,12 +5,17 @@
 // pub mod nested_mods;
 // use crate::functions::retrieve_directory; //crate file is the entry point of file (main.rs). 
 //use functions::retrieve_directory;
-
-pub mod control_flow;
-
+//pub mod control_flow;
+//mod ownership;
+mod references_borrowing;
 fn main() {
+     
+    references_borrowing::main_func();
     
-    control_flow::control_flow();
+    //ownership::ownership();
+    
+    //control_flow::control_flow();
+    
     // //functions
     //println!("{}", retrieve_directory());
     
